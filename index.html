@@ -13,47 +13,65 @@
     <script type="text/javascript" src="./JS/home.js"></script>
 </head>
 <body>
-    
-    <div class="header">
-        <div class="shool">
-            <img src="./IMG/logoHust.png" alt="logo" class="shool-logo">
-            <div class="shool-text">
-                <div class="shool-text__name">TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI</div>
-                <div class="shool-text__sysname">HỆ THỐNG QUẢN LÝ ĐÀO TẠO</div>
+    <div class="container" id="blur">
+        <div class="header">
+            <div class="shool">
+                <img src="./IMG/logoHust.png" alt="logo" class="shool-logo">
+                <div class="shool-text">
+                    <div class="shool-text__name">TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI</div>
+                    <div class="shool-text__sysname">HỆ THỐNG QUẢN LÝ ĐÀO TẠO</div>
+                </div>
             </div>
+            <div class="search">
+                <input class="search-txt" type="text" name="" placeholder = "Tìm kiếm">
+                <a href="#" class="search-btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </a>
+            </div>
+            <label for ="show" class="signIn" onclick="toggle(),stu_and_teach()">Đăng Nhập</label>
         </div>
-        <div class="search">
-            <input class="search-txt" type="text" name="" placeholder = "Tìm kiếm">
-            <a href="#" class="search-btn">
-                <ion-icon name="search-outline"></ion-icon>
-            </a>
+        <div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__listitem homepage">TRANG CHỦ</li>
+                <li class="nav__listitem">THÔNG BÁO
+                    <ul class="nav__listitemdrop">
+                        <li>Đại học</li>
+                        <li>Sau đại học</li>
+                        <li>Vừa làm vừa học</li>
+                    </ul>
+                </li>
+                <li class="nav__listitem">KẾ HOẠCH
+                    <ul class="nav__listitemdrop">
+                        <li>Đại học</li>
+                        <li>Sau đại học</li>
+                        <li>Vừa làm vừa học</li>
+                    </ul>
+                </li>
+                <li class="nav__listitem">QUY ĐỊNH
+                    <ul class="nav__listitemdrop">
+                        <li>Đại học</li>
+                        <li>Sau đại học</li>
+                        <li>Vừa làm vừa học</li>
+                        <li>Biểu mẫu</li>
+                    </ul>
+                </li>
+                <li class="nav__listitem">DỊCH VỤ</li>
+                <li class="nav__listitem">TRA CỨU VĂN BẰNG</li>
+                <li class="nav__listitem">LIÊN HỆ</li>
+            </ul>
+        </nav>
         </div>
-        <label for="show" class="signIn">Đăng Nhập</label>
-    </div>
-    <div>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__listitem">TRANG CHỦ</li>
-            <li class="nav__listitem">THÔNG BÁO
-                <ul class="nav__listitemdrop">
-                    <li>Đại học</li>
-                    <li>Sau đại học</li>
-                    <li>Vừa làm vừa học</li>
-                </ul>
-            </li>
-            <li class="nav__listitem">KẾ HOẠCH</li>
-            <li class="nav__listitem">QUY ĐỊNH</li>
-            <li class="nav__listitem">DỊCH VỤ</li>
-            <li class="nav__listitem">TRA CỨU VĂN BẰNG</li>
-            <li class="nav__listitem">LIÊN HỆ</li>
-        </ul>
-    </nav>
-    </div>
-    <div class="main-img">
-        <img src="https://smifood.net/wp-content/uploads/2021/06/184965236_475216467129536_3615921223300885595_n-820x480.jpg" alt="HUST">
+        <div class="main-img">
+            <img src="https://smifood.net/wp-content/uploads/2021/06/184965236_475216467129536_3615921223300885595_n-820x480.jpg" alt="HUST">
+        </div>
+        <!-- <div class="main-contact">Liên hệ</div> -->
+        <div class="footer">@Copyright deventerprime</div>
     </div>
     <input type="checkbox" id="show">
     <div class="login-box">
+        <label for = "show" class="close-btn" onclick="toggle()"><i class="fas fa-times-circle"></i>
+        </label>
         <div class="button-box">
             <div id="btn"></div>
             <button type="button" class="toggle-btn" onclick = "stu_and_teach()">Sinh viên/Giảng viên</button>
@@ -84,10 +102,9 @@
             </div>
         </div>
     </div>
-    <!-- <div class="main-contact">Liên hệ</div> -->
-    <div class="footer">@Copyright deventerprime</div>
-    <script>
-       
+    <!-- <div class="main-contact">Liên hệ</div>
+    <div class="footer">@Copyright deventerprime</div> -->
+    <script type="text/javascript">
         var x = document.getElementById("stu_and_teach");
         var y = document.getElementById("department");
         var z = document.getElementById("btn");
