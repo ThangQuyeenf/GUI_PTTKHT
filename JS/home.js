@@ -14,3 +14,7 @@ function department(){
     z.style.left = "180px";
 }
 
+function toggle(){
+    var blur = document.getElementById("blur");
+    blur.classList.toggle('active');
+}
