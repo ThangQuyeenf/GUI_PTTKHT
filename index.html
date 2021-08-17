@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./CSS/home.css" type = "text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script type="text/javascript" src="./JS/home.js"></script>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="shool">
+            <img src="./IMG/logoHust.png" alt="logo" class="shool-logo">
+            <div class="shool-text">
+                <div class="shool-text__name">TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI</div>
+                <div class="shool-text__sysname">HỆ THỐNG QUẢN LÝ ĐÀO TẠO</div>
+            </div>
+        </div>
+        <div class="search">
+            <input class="search-txt" type="text" name="" placeholder = "Tìm kiếm">
+            <a href="#" class="search-btn">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
+        </div>
+        <label for="show" class="signIn">Đăng Nhập</label>
+    </div>
+    <div>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__listitem">TRANG CHỦ</li>
+            <li class="nav__listitem">THÔNG BÁO
+                <ul class="nav__listitemdrop">
+                    <li>Đại học</li>
+                    <li>Sau đại học</li>
+                    <li>Vừa làm vừa học</li>
+                </ul>
+            </li>
+            <li class="nav__listitem">KẾ HOẠCH</li>
+            <li class="nav__listitem">QUY ĐỊNH</li>
+            <li class="nav__listitem">DỊCH VỤ</li>
+            <li class="nav__listitem">TRA CỨU VĂN BẰNG</li>
+            <li class="nav__listitem">LIÊN HỆ</li>
+        </ul>
+    </nav>
+    </div>
+    <div class="main-img">
+        <img src="https://smifood.net/wp-content/uploads/2021/06/184965236_475216467129536_3615921223300885595_n-820x480.jpg" alt="HUST">
+    </div>
+    <input type="checkbox" id="show">
+    <div class="login-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick = "stu_and_teach()">Sinh viên/Giảng viên</button>
+            <button type="button" class="toggle-btn" onclick = "department()">Phòng Đào tạo</button>
+        </div>
+        <div class="login-sociallogo">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-windows"></i>
+            <i class="fab fa-google"></i>
+        </div>
+        <div id = "stu_and_teach" class="login-input">
+            <input type="text" class="login-input__field" placeholder="Tài khoản" required>
+            <input type="text" class="login-input__field" placeholder ="Mật khẩu" required>
+            <input type="checkbox" ><span>Nhớ mật khẩu?</span>
+            <button type="submit" class="login-submit__btn">ĐĂNG NHẬP</button>
+            <div id="forgot-pass">
+                <a href="#">Quên mật khẩu?</a>
+            </div>
+        </div>
+        <div id="department" class="login-input">
+            <input type="text" class="login-input__field" placeholder="Tài khoản" required>
+            <input type="text" class="login-input__field" placeholder ="Mật khẩu" required>
+            <input type="text" class="login-input__field" placeholder ="Nhập lại mật khẩu" required>
+            <input type="checkbox" class="login-checkbox"><span>Tôi đồng ý với điều khoản!</span>
+            <button type="submit" class="login-submit__btn">ĐĂNG KÝ</button>
+            <div id="forgot-pass">
+                <a href="#">Quên mật khẩu?</a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="main-contact">Liên hệ</div> -->
+    <div class="footer">@Copyright deventerprime</div>
+    <script>
+       
+        var x = document.getElementById("stu_and_teach");
+        var y = document.getElementById("department");
+        var z = document.getElementById("btn");
+        department();
+        stu_and_teach();
+    </script>
+</body>
+</html>
