@@ -6,38 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/student.css" type="text/css">
     <script type = "text/javascript" src="./JS/student.js" ></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <title>Document</title>
 </head>
 <body>
-    <div class="toggle">
-        <ion-icon name="menu-outline" class="open"></ion-icon>
-        <ion-icon name="close-outline" class="close"></ion-icon>
-    </div>
     <div class="container">
         <div class="header"></div>
         <div class="navigation">
             <div class="logo_content">
                 <div class="logo">
-                    <ion-icon name="school-outline"></ion-icon>
+                    <i class='bx bxs-analyse'></i>
                     <div class="logo-name">EMS</div>
                 </div>
-                <ion-icon name="menu-outline" id="menu-btn"></ion-icon>
+                <i class='bx bx-menu' id="menu-btn"></i>
             </div>
             <ul class="nav_list">
                 <li>
-                    <a href="#">
-                        <ion-icon name="search-circle-outline"></ion-icon>
-                        <span class="links_name">Search</span>
-                    </a>
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
                     <span class="tooltip">Search</span>
                 </li>
                 <li>
                     <a href="#">
                         
-                        <ion-icon name="grid-outline"></ion-icon>
+                        <i class='bx bxs-dashboard'></i>
                         <span class="links_name">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                 <li>
+                    <a href="#">
+                        <i class='bx bx-user-circle'></i>
+                        <span class="links_name">User</span>
                     </a>
                     <span class="tooltip">Dashboard</span>
                 </li>
@@ -46,25 +47,20 @@
         <div class="block-3"></div>
     </div>
     <script>
-        let menuToggle = document.querySelector('.toggle');
-        let navigation = document.querySelector('.navigation');
+        let menuToggle = document.querySelector('#menu-btn');
         let container = document.querySelector('.container');
+        let navigation = document.querySelector('.navigation');
+        let navList = document.querySelector('.nav_list');
+        let search = document.querySelector('.bx-search');
         menuToggle.onclick = function(){
-            menuToggle.classList.toggle('active');
             container.classList.toggle('active');
             navigation.classList.toggle('active');
+            navList.classList.toggle('active');
         }
-
-        let list = document.querySelectorAll('.list');
-        // console.log(list.length);
-        for( let i= 0; i<list.length; i++){
-            list[i].onclick = function(){
-                let j = 0;
-                while( j < list.length){
-                    list[j++].className = 'list';
-                }
-                list[i].className = 'list active';
-            }
+        search.onclick = function(){
+            container.classList.toggle('active');
+            navigation.classList.toggle('active');
+            navList.classList.toggle('active');
         }
     </script>
 </body>
