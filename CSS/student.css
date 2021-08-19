@@ -10,12 +10,31 @@
 
 body {
     min-height: 100vh;
-    background: #fff;
+    /* background:red; */
 }
+.container{
+    width: 100%;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 78px calc(100% - 78px);
+    /* grid-template-rows: 1fr 7fr; */
+    grid-gap: 0 0;
+    transition: all .4s ease;
+    grid-template-areas: 
+    "h2 h1 "
+    "h2 h3";
+}
+.container.active{
+    /* */
+    grid-template-columns: 240px calc(100% - 240px);
+}
+
 .header{
     grid-area: h1;
     height: 80px;
     background-color: salmon;
+    transition: all .4s ease;
+    width: 100%;
     /* border-radius: -40px;
     border-bottom-left-radius: 40px; */
 }
@@ -24,11 +43,14 @@ body {
     grid-area: h2;
     height: 100vh;
     background-color: darksalmon;
+    transition: all .4s ease;
 }
 .block-3{
     grid-area: h3;
-    height: calc(100vh - 80px);
-    background-color: fff;
+    /* height: calc(100vh - 80px); */
+    background-color:darkkhaki;
+    transition: all .4s ease;
+    height: 1000px;
 }
 .navigation
 {
@@ -36,164 +58,138 @@ body {
     z-index: 1000;
     top: 0px;
     left: 0px;
-    /* bottom: 0px; */
     background-color: #4d5bf9;
     padding: 6px 14px;
-    width: 240px;
-    box-sizing: initial;
-    border-left: 5px solid #4d5bf9;
-    transition: 0.1s; 
-    overflow-x: hidden;
+    width: 78px;
+    transition: all 0.4s ease;  
 }
 .navigation.active{
-    width: 300px;
+    width: 240px;
 }
-.navigation ul{
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 40px 0 5px 0;
-}
-
-.navigation ul li{
-    position: relative;
-    list-style: none;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.navigation ul li b:nth-child(1){
-    position: absolute;
-    top: -20px;
-    height: 20px;
-    width: 100%;
-    background: #fff;
-    display:none;
-}
-
-.navigation ul li b:nth-child(1)::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #4d5bf9;
-    border-bottom-right-radius: 20px;
-}
-
-
-.navigation ul li b:nth-child(2){
-    position: absolute;
-    bottom: -20px;
-    height: 20px;
-    width: 100%;
-    background: #fff;
-    display: none;
-}
-
-.navigation ul li b:nth-child(2)::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #4d5bf9;
-    border-top-right-radius: 20px;
-}
-.navigation ul li.active b:nth-child(1),
-.navigation ul li.active b:nth-child(2){
-    display: block;
-}
-.navigation ul li.active {
-    background :#fff;
-
-}
-
-.navigation ul li a{
-    position: relative;
-    display: block;
-    width: 100%;
+.navigation .logo_content .logo{
+    color: #fff;
     display: flex;
-    text-decoration: none;
-    color: #FFF;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition:all .4s ease;
 }
-.navigation ul li.active a {
-    color: #333;
+.navigation.active .logo_content .logo{
+    opacity: 1;
+    pointer-events: none; 
 }
-.navigation ul li a .icon {
-    position: relative;
-    display: block;
-    min-width: 60px;
-    height: 60px;
-    line-height: 70px;
-    text-align: center;
-
+.logo_content .logo i{
+    font-size: 40px;
+    margin-right: 5px;
 }
-
-.navigation ul li a .icon ion-icon {
-    font-size: 1.5em;
+.logo_content .logo .logo-name{
+    font-size: 40px;
+    font-weight: 500;
 }
-
-.navigation ul li a .title {
-    position: relative;
-    display: block;
-    padding-left: 10px;
-    height: 60px;
-    line-height: 60px;
-    white-space: normal;
-
-}
-
-.toggle{
-    position: fixed;
-    top: 20px;
-    right: 20px;
+.navigation #menu-btn{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 6px;
+    font-size: 30px;
     width: 50px;
     height: 50px;
-    background-color: #4d5bf9;
-    border-radius: 10px;
-    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+.navigation.active #menu-btn{
+    left: 90%;
+}
+.nav_list{
+    margin-top: 25px;
+}
+.nav_list li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    /* margin: 0 5px; */
+    list-style-type: none;
+    line-height: 50px;
+}
+.nav_list li a{
+    color: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
-
+    text-decoration: none;
+    transition: all .4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
 }
-
-.toggle.active{
-    background-color: #ff4d89;
+.nav_list li a:hover{
+    color: #4d5bf9;
+    background: #fff;
 }
-
-.toggle ion-icon{
+.nav_list li input{
     position: absolute;
-    color: #FFF;
-    font-size: 34px;
-    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: cornflowerblue;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
 }
-
-.toggle ion-icon.open,
-.toggle.active ion-icon.close{
+.nav_list li .bx-search{
+    position: absolute;
+    z-index: 1001;
+    color: #fff;
+    font-size: 30px;  
+}
+.nav_list li .bx-search:hover{
+    background: #fff;
+    color: cornflowerblue;
+}
+.nav_list li  i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+.nav_list li .tooltip{
+    position: absolute;
+    left: 122px;
+    top: 0;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    width: 122px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0 ,0.2);
+    border-radius: 6px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
     display: block;
 }
-
-.toggle.active ion-icon.open,
-.toggle ion-icon.close{
+.nav_list li:hover .tooltip{
+    top: 50%;
+    opacity: 1;
+    transition: all .4s ease;
+}
+.nav_list.active li .tooltip{
     display: none;
 }
-.container{
-    width: 100%;
-    margin: auto auto;
-    display: grid;
-    grid-template-columns: 70px calc(100% - 70px);
-    grid-template-rows: 1fr 10fr;
-    grid-gap: 0 0;
-    grid-template-areas: 
-    "h2 h1 "
-    "h2 h3";
+.nav_list .links_name{
+    opacity: 0;
+    pointer-events: none;
+    transition:all .4s ease;
 }
-.container.active{
-    grid-template-columns: 300px calc(100% - 300px);
+.nav_list.active .links_name{
+    opacity: 1;
+    pointer-events: auto;
 }
