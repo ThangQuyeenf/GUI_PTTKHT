@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/general.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/student.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/table.css" type = "text/css">
+    <script type = "text/javascript" src="./JS/student.js" defer ></script>
+    <script type = "text/javascript" src="./JS/general.js" defer ></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- // header -->
+        <div class="header">
+            <div class="func_select">Dashboard</div>
+            <div class="user">
+                <div class="user-info">
+                    <img src="./IMG/basket11.jpg" alt="" class="user_img">
+                    <div class="user_names">My names adasdsadssd</div>
+                </div>
+                <div class="user_message">
+                    <i class='bx bxs-message-square-dots'></i>
+                </div>
+                <div class="user_notification">
+                    <i class='bx bx-bell'></i>
+                </div>
+                <div class="user_logout">
+                    <i class='bx bx-log-out-circle'></i>
+                </div>
+            </div>
+        </div>
+        <!-- // Menu -->
+        <div class="navigation">
+            <div class="logo_content">
+                <div class="logo">
+                    <i class='bx bxs-analyse'></i>
+                    <div class="logo-name">EMS</div>
+                </div>
+                <i class='bx bx-menu' id="menu-btn"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Search</span>
+                </li>
+                <li>
+                    <a href="#" class="list active">
+                        
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="links_name">Bảng điều khiển</span>
+                    </a>
+                    <span class="tooltip">Bảng điều khiển </span>
+                </li>
+                 <li>
+                    <a href="#" class="list">
+                        <i class='bx bx-user-circle'></i>
+                        <span class="links_name">Hồ sơ sinh viên</span>
+                    </a>
+                    <span class="tooltip">Hồ sơ sinh viên</span>
+                </li>
+                <li>
+                    <a href="#" class="list">
+                        <i class='bx bx-edit-alt'></i>
+                        <span class="links_name">Đăng ký học phần</span>
+                    </a>
+                    <span class="tooltip">Đăng ký học phần</span>
+                </li>
+                <li>
+                    <a href="#" class="list">
+                        <i class='bx bxs-edit-alt'></i>
+                        <span class="links_name">Đăng ký lớp học</span>
+                    </a>
+                    <span class="tooltip">Đăng ký lớp học</span>
+                </li>
+                <li>
+                    <a href="#" class="list">
+                        <i class='bx bxs-calendar'></i>
+                        <span class="links_name">Thời khóa biểu</span>
+                    </a>
+                    <span class="tooltip">Thời khóa biểu</span>
+                </li>
+                <li>
+                    <a href="#" class="list">
+                        <i class='bx bxs-bar-chart-alt-2'></i>
+                        <span class="links_name">Kết quả học tập</span>
+                    </a>
+                    <span class="tooltip">Kết quả học tập</span>
+                </li>
+                <li>
+                    <a href="#" class="list">
+                        <i class='bx bx-money' ></i>
+                        <span class="links_name">Công nợ học phí</span>
+                    </a>
+                    <span class="tooltip">Công nợ học phí</span>
+                </li>
+                <li>
+                    <a href="#" class="list">
+                        <i class='bx bx-donate-heart'></i>
+                        <span class="links_name">Dịch vụ</span>
+                    </a>
+                    <span class="tooltip">Dịch vụ</span>
+                </li>
+            </ul>
+        </div>
+        <!-- // Content - Nội dung
+        // Bảng điều khiển -->
+         <div class="content active">
+            <div class="dashboard"></div>
+        </div>
+        <!-- // Hồ sơ sinh viên -->
+        <div class="content">
+            <div class="profile">
+                <div class="profile-title">Thông tin sinh viên</div>
+                <hr>
+                <div class="profile-box">
+                    <div class="profile-subbox">
+                        <img src="./IMG/basket11.jpg" alt="profile__image" class = "profile__img">
+                        <div>
+                            <strong>MSSV&emsp14;:</strong>&emsp14;20185476
+                        </div>
+                    </div>
+                    <div class="profile-textbox">
+                        <strong>Họ và tên&emsp14; :</strong>&emsp14;Điệp Quyền Thắng
+                        <br>
+                        <strong>Năm vào trường&emsp14;:</strong>&emsp14;2018
+                        <br>
+                        <strong>Bậc đào tạo&emsp14;:</strong>&emsp14;Đại học
+                        <br>
+                        <strong>Ngành học&emsp14;:</strong>&emsp14;Hệ thống thông tin quản lý
+                        <br>
+                        <strong>Viện quản lý&emsp14;:</strong>&emsp14;Toán ứng dụng và Tin học
+                        <br>
+                    </div>
+                    <div class="profile-textbox">
+                        <strong>Giới tính&emsp14;:</strong>&emsp14;Nam
+                        <br>
+                        <strong>Lớp&emsp14;:</strong>Hệ thống thông tin 01-K63
+                        <br>
+                        <strong>Khóa học&emsp14;:</strong>&emsp14;63
+                        <br>
+                        <strong>Email&emsp14;:</strong>&emsp14;Thang.dq185476@sis.hust.edu.vn
+                        <br>
+                        <strong>Tình trạng học tập&emsp14;:</strong>&emsp14;Học
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profile-title">Thông tin học tập</div>
+                <hr>
+                <div class="profile-box">
+                    <div class="profile-subbox">
+                        <img src="./IMG/basket11.jpg" alt="profile__image" class = "profile__img">
+                        <div>
+                            <strong>MSSV&emsp14;:</strong>&emsp14;20185476
+                        </div>
+                    </div>
+                    <div class="profile-textbox">
+                        <strong>Tổng kết học kỳ&emsp14; :</strong>&emsp14;20201
+                        <br>
+                        <strong>Trung bình tích lũy&emsp14;:</strong>&emsp14;2.62
+                        <br>
+                        <strong>Số TC nợ đăng ký&emsp14;:</strong>&emsp14;0
+                        <br>
+                    </div>
+                    <div class="profile-textbox">
+                        <strong>Số TC tích lũy&emsp14;:</strong>&emsp14;85
+                        <br>
+                        <strong>Trình độ sinh viên&emsp14;:</strong>&emsp14;3
+                        <br>
+                        <strong>Mức cảnh cáo&emsp14;:</strong>&emsp14;0
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profile-title">Thông tin cá nhân</div>
+                <hr>
+                <div class="profile-box">
+                    <div class="profile-textbox">
+                        <strong>Họ và tên&emsp14; :</strong>&emsp14;Điệp Quyền Thắng
+                        <br>
+                        <strong>Năm vào trường&emsp14;:</strong>&emsp14;2018
+                        <br>                        
+                    </div>
+                    <div class="profile-textbox">
+                        <strong>Giới tính&emsp14;:</strong>&emsp14;Nam
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Đăng ký học phần -->
+        <div class="content">
+            <div class="course">
+                <div class="course-form">
+                    <div class="form__text">
+                        Học chương trình&emsp14;:&emsp14;Hệ thống thông tin quản lý 2018
+                        <br>
+                        Học kỳ&emsp14;:&emsp14;
+                        <select name="select term" class="select-term">
+                            <option value=" "> </option>
+                            <option value ="20211">20211</option>
+                            <option value ="20203">20203</option>
+                            <option value ="20202">20202</option>
+                            <option value ="20201">20201</option>
+                            <option value ="20193">20193</option>
+                            <option value ="20192">20192</option>
+                            <option value ="20191">20191</option>
+                            <option value ="20183">20183</option>
+                            <option value="20182">20182</option>
+                            <option value="20181">20181</option>
+                        </select>
+                        <br>
+                        Mã học phần đăng ký&emsp14;:&emsp14; 
+                        <input type="text" class="course-code input-code">
+                        <br>
+                        <a href="#" class="course-list">XEm danh sách học phần trong chương trình </a>
+                        <br>
+                        <button type="submit" class="course-submit">Đăng ký</button>
+                    </div>
+                </div>
+                <div class="course-result">
+                    <div class="title">
+                        Bảng đăng ký học phần kỳ 20211 của sinh viên 20185476
+                    </div>
+                    <ul class="table">
+                        <li class="table-header">
+                            <div class="col-p10">Mã học phần</div>
+                            <div class="col-p30">Tên học phần</div>
+                            <div class="col-p20">Ngày đăng ký</div>
+                            <div class="col-p20">TT đăng ký</div>
+                            <div class="col-p12">Số tín chỉ</div>
+                            <div class="col-p8">Tùy chọn</div>
+                        </li>
+                        <li class="row">
+                            <div class="col-p10" data-label="Mã học phần">MI2030</div>
+                            <div class="col-p30" data-label="Tên học phần" style = "text-align:left; padding-left: 5px;">Technical Writing and Presentation</div>
+                            <div class="col-p20" data-label="Ngày đăng ký">3/18/2021</div>
+                            <div class="col-p20" data-label="TT đăng ký">Thành công</div>
+                            <div class="col-p12" data-label="Số tín chỉ">3</div>
+                            <div class="col-p8" data-label="Tùy chọn">
+                                <button class="del" type="delete">X</button>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-p10" data-label="Mã học phần">MI4414</div>
+                            <div class="col-p30" data-label="Tên học phần" style = "text-align:left; padding-left: 5px;">	Quản trị dự án CNTT</div>
+                            <div class="col-p20" data-label="Ngày đăng ký">3/18/2021</div>
+                            <div class="col-p20" data-label="TT đăng ký">Thành công</div>
+                            <div class="col-p12" data-label="Số tín chỉ">2</div>
+                            <div class="col-p8" data-label="Tùy chọn">
+                                <button class="del" type="delete">X</button>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-p10" data-label="Mã học phần">MI4392</div>
+                            <div class="col-p30" data-label="Tên học phần" style = "text-align:left; padding-left: 5px;">Công nghệ web và kinh doanh điện tử</div>
+                            <div class="col-p20" data-label="Ngày đăng ký">3/18/2021</div>
+                            <div class="col-p20" data-label="TT đăng ký">Thành công</div>
+                            <div class="col-p12" data-label="Số tín chỉ">3</div>
+                            <div class="col-p8" data-label="Tùy chọn">
+                                <button class="del" type="delete">X</button>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-p10" data-label="Mã học phần">MI3390</div>
+                            <div class="col-p30" data-label="Tên học phần" style = "text-align:left; padding-left: 5px;">Đồ án II</div>
+                            <div class="col-p20" data-label="Ngày đăng ký">3/18/2021</div>
+                            <div class="col-p20" data-label="TT đăng ký">Thành công</div>
+                            <div class="col-p12" data-label="Số tín chỉ">3</div>
+                            <div class="col-p8" data-label="Tùy chọn">
+                                <button class="del" type="delete">X</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="total">
+                        <div class="course__total">
+                            Tổng số tín chỉ đăng ký&emsp14;:&emsp14;11
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="course-submit">Gửi đăng ký</button>
+            </div>
+        </div>
+        <!-- Đăng ký lớp -->
+        <div class="content">
+            <div class="class">
+                <div class="class-form">
+                    <div class="form__text">
+                        Học chương trình&emsp14;:&emsp14;Hệ thống thông tin quản lý 2018
+                        <br>
+                        Mã Lớp&emsp14;:&emsp14;
+                        <input type="text" class="class-code input-code">
+                        <br>
+                        Số tín chỉ tối đa&emsp14;:&emsp14;24.
+                        <br>
+                        <a href="#" class="class-list">Thông tin danh sách lớp mở.</a>
+                        <br>
+                        <div class="warning-text">Hiện tại không phải thời gian đăng ký lớp</div>
+                        <button class="class-submit course-submit">Đăng ký</button>
+                    </div>
+                </div>
+                <div class="class-result">
+                    <div class="title">
+                        Bảng các lớp đăng ký
+                    </div>
+                    <ul class="table">
+                        <div class="line-10"></div>
+                        <div class="line-20"></div>
+                        <div class="line-40"></div>
+                        <div class="line-50"></div>
+                        <div class="line-55"></div>
+                        <div class="line-65"></div>
+                        <div class="line-75"></div>
+                        <div class="line-85"></div>
+                        <div class="line-90"></div>
+                        <li class="table-header">
+                            <div class="col col-p10">Mã Lớp</div>
+                            <div class="col col-p10">Mã lớp kèm</div>
+                            <div class="col col-p20">Tên lớp</div>
+                            <div class="col col-p10">Mã HP</div>
+                            <div class="col col-p5">Loại lớp</div>
+                            <div class="col col-p10">TT lớp</div>
+                            <div class="col col-p10">TT ĐK</div>
+                            <div class="col col-p10">Loại ĐK</div>
+                            <div class="col col-p5">TC</div>
+                            <div class="col col-p10">
+                                Tùy chọn
+                                <br>
+                                (Xóa)
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="total">
+                        <div class="class__total">
+                            Tổng số TC đăng ký&emsp14;:&emsp14;0
+                        </div>
+                    </div>
+                    <div class="title">
+                        Thời khóa biểu các lớp đăng ký.
+                    </div>
+                    <ul class="table">
+                        <div class="line-20"></div>
+                        <div class="line-40"></div>
+                        <div class="line-60"></div>
+                        <div class="line-80"></div>
+                        <li class="table-header">
+                            <div class="col col-p20">Thứ</div>
+                            <div class="col col-p20">Thời gian</div>
+                            <div class="col col-p20">Tuần học</div>
+                            <div class="col col-p20">Phòng học</div>
+                            <div class="col col-p20">Lớp học</div>
+                        </li>
+
+                    </ul>
+                </div>
+                <button type="submit" class="course-submit">Gửi đăng ký</button>
+                <div class="bottom-100"></div>
+            </div>
+        </div>
+        <!-- // Thời khóa biểu -->
+        <div class="content">
+            <div class="schedule-table">
+                <div class="title">Thời khóa biểu sinh viên.</div>
+                <ul class="table">
+                    <div class="line-5"></div>
+                    <div class="line-25"></div>
+                    <div class="line-30"></div>
+                    <div class="line-35"></div>
+                    <div class="line-40"></div>
+                    <div class="line-50"></div>
+                    <div class="line-60"></div>
+                    <div class="line-70"></div>
+                    <div class="line-80"></div>
+                    <div class="line-90"></div>
+                    <li class="table-header">
+                        <div class="col col-p5">Mã lớp</div>
+                        <div class="col col-p20">Tên lớp</div>
+                        <div class="col col-p5">Mã HP</div>
+                        <div class="col col-p5">Phòng học</div>
+                        <div class="col col-p5">Loại lớp</div>
+                        <div class="col col-p10">Tuần học</div>
+                        <div class="col col-p10">Thời gian</div>
+                        <div class="col col-p10">Giảng viên</div>
+                        <div class="col col-p10">Hình thức dạy</div>
+                        <div class="col col-p10">Link Online</div>
+                        <div class="col col-p10">Ghi chú</div>
+                    </li>
+                    <li class="row underline">
+                        <div class="col col-p5">
+                            
+                        <div class="col col-p20">
+                            
+                        <div class="col col-p5">
+                           
+                        <div class="col col-p5">
+                           
+                        <div class="col col-p10">
+                           
+                        <div class="col col-p10">
+                           
+                        <div class="col col-p10">
+                            
+                        <div class="col col-p10">
+
+                        </div>
+                        <div class="col col-p10">
+                            
+                        </div>
+                        <div class="col col-p10">
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="schedule-timetable">
+                <div class="timetable__header">
+                    <ul class = 'timetable__days'>
+                        <li>Monday</li>
+                        <li>Tuesday</li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>Friday</li>
+                    </ul>
+                </div>
+                <div class="timetable__timeslots">
+                    <ul class="timeslots">
+                        <li>6:00</li>
+                        <li>7:00</li>
+                        <li>8:00</li>
+                        <li>9:00</li>
+                        <li>10:00</li>
+                        <li>11:00</li>
+                        <li>12:00</li>
+                        <li>13:00</li>
+                        <li>14:00</li>
+                        <li>15:00</li>
+                        <li>16:00</li>
+                        <li>17:00</li>
+                        <li>18:00</li>
+                    </ul>
+                </div>
+                <div class="timetable__event">
+                    <div class="slot slot-1">
+                        <div class="event-status"></div>
+                        <span>Học phần: MI1111
+                            <br>
+                            Mã lớp: 112763 - Giải tích 1 (D9-101)</span>
+                    </div>
+                    <div class="slot slot-2">
+                        <div class="event-status"></div>
+                        <span>Học phần: MI3210
+                            <br>
+                            Mã lớp: 112975 - Giải tích 2 (D9-104)</span>
+                    </div>
+                    <div class="slot slot-3">
+                        <div class="event-status"></div>
+                        <span>Học phần: SSH1110
+                            <br>
+                            Mã lớp: 112235 - Triết 1 (D9-101)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Kết quả học tập -->
+        <div class="content">
+            <div class="score">                
+                <div id="innerNewScore"></div>
+                <div id="innerScore"></div>
+                <div id="innerFinalScore"></div>
+            </div>
+        </div>
+        <!-- Công nợ học phí -->
+        <div class="content">
+            <div class="tuition">
+                <div class="title">
+                    Bảng học phần kỳ 20202 của sinh viên 20185476
+                </div>
+                <ul class="table">
+                    <div class="line-10"></div>
+                    <div class="line-30"></div>
+                    <div class="line-50"></div>
+                    <div class="line-55"></div>
+                    <div class="line-60"></div>
+                    <div class="line-70"></div>
+                    <div class="line-80"></div>
+                    <div class="line-90"></div>
+                    <li class="table-header">
+                        <div class="col col-p10">Mã học phần</div>
+                        <div class="col col-p20">Tên học phần</div>
+                        <div class="col col-p20">Số tiền/1TC học phí</div>
+                        <div class="col col-p5">Số TC HP</div>
+                        <div class="col col-p5">Hệ số</div>
+                        <div class="col col-p10">Tổng tiền HP</div>
+                        <div class="col col-p10">TT đăng ký</div>
+                        <div class="col col-p10">Loại ĐK</div>
+                        <div class="col col-p10">Ghi chú</div>
+                    </li>
+                    <li class="row underline">
+                        <div class="col col-p10">ED3280</div>
+                        <div class="col col-p20" style = "text-align:left; padding-left: 5px;">	Tâm lý học ứng dụng</div>
+                        <div class="col col-p20">420,000 đ</div>
+                        <div class="col col-p5">3</div>
+                        <div class="col col-p5">1</div>
+                        <div class="col col-p10">1,260,000 đ</div>
+                        <div class="col col-p10">Đăng ký bình thường</div>
+                        <div class="col col-p10">Lần 1</div>
+                        <div class="col col-p10" style = "text-align:left; padding-left: 5px;">Định mức học lần 1 trong chương trình</div>
+                    </li>
+                    <li class="row underline">
+                        <div class="col col-p10">EM3310</div>
+                        <div class="col col-p20" style = "text-align:left; padding-left: 5px;">Mô phỏng hoạt động kinh doanh</div>
+                        <div class="col col-p20">420,000 đ</div>
+                        <div class="col col-p5">3</div>
+                        <div class="col col-p5">1</div>
+                        <div class="col col-p10">1,260,000 đ</div>
+                        <div class="col col-p10">Đăng ký bình thường</div>
+                        <div class="col col-p10">Lần 1</div>
+                        <div class="col col-p10" style = "text-align:left; padding-left: 5px;">Định mức học lần 1 trong chương trình</div>
+                    </li>
+                    <li class="row underline">
+                        <div class="col col-p10">MI3120</div>
+                        <div class="col col-p20" style = "text-align:left; padding-left: 5px;">Phân tích và thiết kế hệ thống</div>
+                        <div class="col col-p20">420,000 đ</div>
+                        <div class="col col-p5">4</div>
+                        <div class="col col-p5">1</div>
+                        <div class="col col-p10">1,680,000 đ</div>
+                        <div class="col col-p10">Đăng ký bình thường</div>
+                        <div class="col col-p10">Lần 1</div>
+                        <div class="col col-p10" style = "text-align:left; padding-left: 5px;">Định mức học lần 1 trong chương trình</div>
+                    </li>
+                    <li class="row underline">
+                        <div class="col col-p10">MI3380</div>
+                        <div class="col col-p20" style = "text-align:left; padding-left: 5px;">Đồ án I</div>
+                        <div class="col col-p20">420,000 đ</div>
+                        <div class="col col-p5">6</div>
+                        <div class="col col-p5">1</div>
+                        <div class="col col-p10">2,520,000 đ</div>
+                        <div class="col col-p10">Đăng ký bình thường</div>
+                        <div class="col col-p10">Lần 1</div>
+                        <div class="col col-p10" style = "text-align:left; padding-left: 5px;">6 TCHP (2520000đ) Thực hành/Thí nghiệm sẽ thu vào đợt sau.</div>
+                    </li>
+                    <li class="row underline">
+                        <div class="col col-p10">MI4260</div>
+                        <div class="col col-p20" style = "text-align:left; padding-left: 5px;">An toàn HTTT</div>
+                        <div class="col col-p20">420,000 đ</div>
+                        <div class="col col-p5">4</div>
+                        <div class="col col-p5">1</div>
+                        <div class="col col-p10">1,680,000 đ</div>
+                        <div class="col col-p10">Đăng ký bình thường</div>
+                        <div class="col col-p10">Lần 1</div>
+                        <div class="col col-p10" style = "text-align:left; padding-left: 5px;">Định mức học lần 1 trong chương trình</div>
+                    </li>
+                    <li class="row underline">
+                        <div class="col col-p10">SSH1130</div>
+                        <div class="col col-p20" style = "text-align:left; padding-left: 5px;">Đường lối CM của ĐCSVN</div>
+                        <div class="col col-p20">420,000 đ</div>
+                        <div class="col col-p5">3</div>
+                        <div class="col col-p5">1</div>
+                        <div class="col col-p10">1,260,000 đ</div>
+                        <div class="col col-p10">Đăng ký bình thường</div>
+                        <div class="col col-p10">Lần 1</div>
+                        <div class="col col-p10" style = "text-align:left; padding-left: 5px;">Định mức học lần 1 trong chương trình</div>
+                    </li>
+                </ul>
+                <div class="total">
+                    <div class="tuition-count">
+                        Count&emsp14;:&emsp14;6
+                    </div>
+                    <div class="tuition-sum" style = "color: red;">Sum&emsp14;:&emsp14;9,660,000 đ</div>
+                </div>
+                <div class="title">
+                    Bảng công nợ đợt 2 học kỳ 20202 của sinh viên 20185476
+                </div>
+                    <ul class="table">
+                        <div class="line-20"></div>
+                        <div class="line-35"></div>
+                        <div class="line-40"></div>
+                        <div class="line-55"></div>
+                        <div class="line-70"></div>
+                        <li class="table-header">
+                            <div class="col col-p20">Loại tiền</div>
+                            <div class="col col-p15">Số tiền</div>
+                            <div class="col col-p5">Hệ số đóng</div>
+                            <div class="col col-p15">Thực đóng</div>
+                            <div class="col col-p15">Ngày cập nhật</div>
+                            <div class="col col-p30">Ghi chú</div>
+                        </li>
+                        <li class="row underline">
+                            <div class="col col-p20" style = "text-align:left; padding-left: 5px;">Học phí theo đăng ký học tập</div>
+                            <div class="col col-p15">7,140,000 đ</div>
+                            <div class="col col-p5">1</div>
+                            <div class="col col-p15" style="color: red;">7,140,000 đ</div>
+                            <div class="col col-p15">30.03.2021 10:32</div>
+                            <div class="col col-p30"></div>
+                        </li>
+                        <li class="row underline">
+                            <div class="col col-p20" style = "text-align:left; padding-left: 5px;">Học phí các học phần TN/TH sẽ thu vào đợt sau</div>
+                            <div class="col col-p15">2,520,000 đ</div>
+                            <div class="col col-p5">0</div>
+                            <div class="col col-p15">000 đ</div>
+                            <div class="col col-p15">14.07.2021 10:01</div>
+                            <div class="col col-p30"></div>
+                        </li>
+                    </ul>
+                    <div class="total">
+                        <div class="tuition-count">
+                            Count&emsp14;:&emsp14;2
+                        </div>
+                        <div class="tuition-sum2">Còn phải đóng&emsp14;:&emsp14;7,140,000 đ</div>
+                    </div>
+                    <div class="tuition-text">
+                        <strong>Thông tin học phí kỳ 20202:</strong>
+                        <ul>
+                            <li>Tổng số tiền phải đóng: đ</li>
+                            <li>Ghi chú:&emsp14;Thời gian thu học phí qua cổng thanh toán của Viettel Pay : Từ 8h00 ngày thứ hai 19/7/2021 đến 17h00 ngày thứ sáu 20/8/2021, Sinh viên xem phụ lục thông báo và hướng dẫn thắc mắc học phí <a href="#">tại đây.</a></li>
+                        </ul>
+                        <button class="payment">Thanh toán học phí </button>
+                    </div>
+            </div>
+        </div>
+        <!-- Đăng ký dịch vụ -->
+        <div class="content">
+            <div class="service">
+                <h1>YÊU CẦU,ĐĂNG KÝ DỊCH VỤ</h1>
+                <div class="service-box">
+                    <div class="card">
+                        <i class='bx bxs-user-detail'></i>
+                        <h2>Đăng ký cập nhật thông tin</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class='bx bxs-user-detail'></i>
+                        <h2>Đăng ký bảo lưu học tập</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class='bx bxs-user-detail'></i>
+                        <h2>Đăng ký chuyển ngành</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class='bx bxs-user-detail'></i>
+                        <h2>Đăng ký hoãn thi</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class='bx bxs-user-detail'></i>
+                        <h2>Đăng ký miễn giảm học phí</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
