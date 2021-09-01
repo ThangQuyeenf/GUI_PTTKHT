@@ -1,3 +1,18 @@
+
+data1 = [65.5, 34.5];
+colors1 = ['#49a9ea', '#36caab']
+let myChart1 = document.getElementById('myChart').getContext('2d');
+let chart1 = new Chart(myChart1, {
+	type: 'doughnut',
+	data: {
+		datasets: [ {
+			data: data1,
+			backgroundColor: colors1
+		}]
+	}
+})
+
+
 document.getElementById('innerNewScore').innerHTML=`
 <div class="title">Bảng thông tin nhập điểm mới nhất</div>
                 <ul class="table">
