@@ -1,4 +1,4 @@
-.dashboard{
+/* .dashboard{
     width: 100%;
     height: 500px;
     background-color:yellow;
@@ -6,4 +6,25 @@
     position: absolute;
     top: 0;
     left: 0;  
+} */
+
+.profile-textbox{
+    margin: 20px 40px;
+    line-height: 2em;
+    width: 50%;
+}
+.schedule-table .course-submit{
+    height: 50px;
+    width: 300px;
+    border-radius: 12px;
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    text-align: center;
+    /* background:palevioletred; */
+}
+.course-submit:hover{
+    cursor: pointer;
+    opacity: .8;
 }
