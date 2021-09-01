@@ -46,6 +46,7 @@ body {
     top: 50%;
     left: 10px;
     font-size: 30px;
+    font-weight: 600;
     transform: translateY(-50%);
 }
 .user{
@@ -74,9 +75,14 @@ body {
     justify-content: space-between;
 }
 .user-info:hover{
-    background: #b1c9ca;
+    background: #1c1e21;
+    opacity: 0.2;
+    color: #fff;
     transition: all .2s ease;
     cursor: pointer;
+}
+.user-info:hover .user_names{
+    color: #fff;
 }
 .user_img{
     padding: 5px;
@@ -84,6 +90,7 @@ body {
     width: 40px;
     border-radius: 40px;
     margin-right: 0 10px;
+    z-index: 100;
 }
 .user_names{
     padding: 5px;
@@ -102,20 +109,23 @@ body {
     width: 40px;
     border-radius: 40px;
     margin: 0 10px;
-    background: cadetblue;
+    background: #1c1e21;
+    opacity: 0.6;
 }
 .user_notification{
     height: 40px;
     width: 40px;
     border-radius: 40px;
-    background: cadetblue;
+    background: #1c1e21;
+    opacity: 0.6;
     margin: 0 10px;
 }
 .user_logout{
     height: 40px;
     width: 40px;
     border-radius: 40px;
-    background: cadetblue;
+    background: #1c1e21;
+    opacity: 0.6;
     margin: 0 10px;
 }
 .user i{
@@ -123,10 +133,10 @@ body {
     line-height: 40px;
     text-align: center;
 }
-.user_notification:hover,.user_message:hover,.user_logout:hover{
+/* .user_notification:hover,.user_message:hover,.user_logout:hover{
     background: #b1c9ca;
     transition: all .2s ease;
-}
+} */
 
 
 .navigation{
@@ -142,7 +152,7 @@ body {
     z-index: 1000;
     top: 0px;
     left: 0px;
-    background-color: #4d5bf9;
+    background-color: #ff2816d1;
     padding: 6px 14px;
     width: 78px;
     transition: all 0.4s ease;  
@@ -208,11 +218,11 @@ body {
     white-space: nowrap;
 }
 .nav_list li a:hover{
-    color: #4d5bf9;
+    color: #ff2816d1;
     background: #fff;
 }
 .list.active{
-    color: #4d5bf9;
+    color: #ff2816d1;
     background: #fff;
 }
 .nav_list li input{
@@ -224,7 +234,7 @@ body {
     border-radius: 12px;
     outline: none;
     border: none;
-    background: cornflowerblue;
+    background: #fb8c829e;
     padding-left: 50px;
     font-size: 18px;
     color: #fff;
@@ -237,7 +247,7 @@ body {
 }
 .nav_list li .bx-search:hover{
     background: #fff;
-    color: cornflowerblue;
+    color: #ff1c08cc;
 }
 .nav_list li i{
     height: 50px;
@@ -302,6 +312,148 @@ body {
     opacity: 1;
     z-index: 1;
 }
+.profile{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    pointer-events: none;
+}
+.profile hr{
+    width: 80%;
+    color: #fff;
+    border: 3px  solid coral;
+    line-height: 4px;
+    border-radius: 4px;
+}
+.profile-title{
+    font-size: 28px;
+    width: 70%;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    /* border-bottom:solid 2px rgba(0, 0, 0 ,0.2); */
+}
+.profile-box{
+    padding: 10px 0;
+    display: flex;
+}
+.profile__img{ 
+    height: 200px;
+    width: 150px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0 ,0.2);
+    margin-bottom: 10px;
+}
+#myChart.profile__img{
+    border: none;
+}
+.profile-subbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+}
+.profile-textbox{
+    margin: 20px 40px;
+    line-height: 2em;
+}
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    background-color:#c0dce640;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;  
+}
+
+.course-form, .class-form{
+    margin-top: 20px;
+    height: 300px;
+    position: relative;
+    
+}
+.class .class-form{
+    margin-top: 20px;
+    height: 350px;
+    position: relative;    
+}
+.form__text{
+    padding: 20px;
+    margin-top: 40px;
+    width:60%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0 ,0.2);
+    /* color: #fff; */
+    line-height: 40px;
+    border-radius: 12px;
+}
+.form__text .course-submit{
+    position: relative;
+    margin-top: 10px;
+}
+.select-term{
+    padding:5px 10px;
+    width: 100px;
+}
+.input-code{
+    padding:5px 10px;
+    width: 240px;
+}
+.class__total{
+    position: absolute;
+    right: 12%;
+}
+.course-submit{
+    height: 40px;
+    width: 240px;
+    border-radius: 12px;
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.course-submit:hover{
+    cursor: pointer;
+}
+.course .table li:last-child{
+    border-top: none;
+}
+.course__total{
+    position: absolute;
+    right: 13.5%;
+}
+.class-search{
+    width: 90%;
+    padding: 0 5px 0 15px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+}
+.col .bx-search{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%,-50%);
+    font-size: 12px;
+}
+.col-p30 .bx-search{
+    left: 7%;
+}
+
 .del{
     height: 25px;
     width: 25px;
@@ -309,6 +461,96 @@ body {
     border: none;
     background-color: red;
     color: #fff;
+}
+
+.schedule-timetable{
+    position: relative;
+    margin: 30px;
+    display: grid;
+    border: 1px solid rgba(0, 0, 0 ,0.2);
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto;
+    /* gap: 1px 1px; */
+    grid-template-areas:
+    ". timetable__header"
+    "timeslots main";
+}
+.schedule-timetable li{
+    list-style: none;
+
+}
+
+.timetable__header{
+    grid-area: timetable__header;
+    background: aquamarine;
+    min-height: 3em;
+    text-align: center;
+    width: 100%;
+}
+.timetable__header li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.timetable__header li:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: rgba(0, 0, 0 ,0.2);
+}
+.timetable__days{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.timetable__timeslots{
+    background: thistle;
+    grid-area: timeslots;
+}
+.timeslots{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.timeslots li{
+    min-height: 60px;
+}
+.timeslots li:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0 ,0.2);
+    /* z-index: 10; */
+}
+.timetable__event{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(52, 1fr);
+    grid-area: main;
+}
+.slot{
+    background-color: rgba(0, 0, 0 ,0.2);
+    z-index: 10;
+    color: white;
+    /* text-align: center; */
+    padding: 10px;
+}
+.slot-1{
+    grid-row: 4/span 9;
+    grid-column: 1/span 1;
+}
+.slot-2{
+    grid-row: 15/span 9;
+    grid-column: 1/span 1;
+}
+.slot-3{
+    grid-row: 27/span 20;
+    grid-column: 2/span 1;
 }
 .del:hover{
     opacity: 0.6;
