@@ -20,8 +20,8 @@
             <div id="func_select">Bảng điều khiển</div>
             <div class="user">
                 <div class="user-info">
-                    <img src="./IMG/basket11.jpg" alt="" class="user_img">
-                    <div class="user_names">My names adasdsadssd</div>
+                    <img src="./images/teacher.jpg" alt="" class="user_img">
+                    <div class="user_names">Teacher 1</div>
                 </div>
                 <div class="user_message">
                     <i class='bx bxs-message-square-dots'></i>
@@ -39,7 +39,7 @@
             <div class="logo_content">
                 <div class="logo">
                     <i class='bx bxs-analyse'></i>
-                    <div class="logo-name">EMS</div>
+                    <div class="logo-name">HUST</div>
                 </div>
                 <i class='bx bx-menu' id="menu-btn"></i>
             </div>
@@ -101,23 +101,257 @@
         </div>
         <!-- // Hồ sơ giảng viên -->
         <div class="content">
+             <div class="profile">
+                <div class="profile-title">Thông tin giảng viên</div>
+                <hr>
+                <div class="profile-box">
+                    <div class="profile-subbox">
+                        <img src="./images/teacher.jpg" alt="profile__image" class = "profile__img">
+                        <div>
+                            <strong>Mã giảng viên&emsp14;:</strong>&emsp14;GV12923
+                        </div>
+                    </div>
+                    <div class="profile-textbox">
+                        
+                    </div>
+                    <div class="profile-textbox">
 
+                    </div>
+                </div>
+                <div class="profile">
+                <div class="profile-box">
+                    <div class="profile-textbox">
+                        <strong>Họ và tên&emsp14; :</strong>&emsp14;Diệp Nam Sơn
+                        <br>
+                        <strong>Chuyên Ngành&emsp14;:</strong>&emsp14;Khảo cổ học
+                        <br>
+                        <strong>Năm năm sinh&emsp14;:</strong>&emsp14;02-02-2000
+                        <br>
+                        <strong>Địa chỉ&emsp14;:</strong>&emsp14;Vân Đồn, Quảng Ninh, Việt Nam.
+                        <br>                      
+                    </div>
+                    <div class="profile-textbox">
+                        <strong>Giới tính&emsp14;:</strong>&emsp14;Nam
+                        <br>
+                        <strong>Khoa/Viện&emsp14;:</strong>&emsp14;Khoa khảo cổ
+                        <br>
+                        <strong>Số điện thoại&emsp14;:</strong>&emsp14;199023263
+                        <br>
+                        <strong>Số CCCD&emsp14;:</strong>&emsp14;9234723788
+                        <br>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
         <!-- // Đăng ký giảng dạy -->
         <div class="content">
-            
+             <div class="course">
+                <div class="course-form">
+                    <div class="form__text">
+                        Học kỳ&emsp14;:&emsp14;
+                        <select name="select term" class="select-term">
+                            <option value=" "> </option>
+                            <option value ="20211">20211</option>
+                            <option value ="20203">20203</option>
+                            <option value ="20202">20202</option>
+                            <option value ="20201">20201</option>
+                            <option value ="20193">20193</option>
+                            <option value ="20192">20192</option>
+                            <option value ="20191">20191</option>
+                            <option value ="20183">20183</option>
+                            <option value="20182">20182</option>
+                            <option value="20181">20181</option>
+                        </select>
+                        <br>
+                        Mã học phần đăng ký&emsp14;:&emsp14; 
+                        <input type="text" class="course-code input-code">
+                        <br>
+                        <a href="#" class="course-list">Xem danh sách học phần</a>
+                        <br>
+                        <button type="submit" class="course-submit">Đăng ký</button>
+                    </div>
+                </div>
+                <div class="course-result">
+                    <div class="title">
+                        Bảng đăng ký giảng dạy
+                    </div>
+                    <ul class="table">
+                        <li class="table-header">
+                            <div class="col-p10">Mã học phần</div>
+                            <div class="col-p30">Tên học phần</div>
+                            <div class="col-p20">Ngày đăng ký</div>
+                            <div class="col-p20">TT đăng ký</div>
+                            <div class="col-p20">Tùy chọn</div>
+                        </li>
+                        <li class="row">
+                            <div class="col-p10" data-label="Mã học phần">KC1111</div>
+                            <div class="col-p30" data-label="Tên học phần" style = "text-align:left; padding-left: 5px;">Một số vấn đề cơ bản về lí luận sử học</div>
+                            <div class="col-p20" data-label="Ngày đăng ký">3/18/2021</div>
+                            <div class="col-p20" data-label="TT đăng ký">Thành công</div>
+                            <div class="col-p20" data-label="Tùy chọn">
+                                <button class="del" type="delete">X</button>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-p10" data-label="Mã học phần">KC2314</div>
+                            <div class="col-p30" data-label="Tên học phần" style = "text-align:left; padding-left: 5px;">Lịch sử các vấn đề về tôn giáo ở Việt Nam</div>
+                            <div class="col-p20" data-label="Ngày đăng ký">3/18/2021</div>
+                            <div class="col-p20" data-label="TT đăng ký">Thành công</div>
+                            <div class="col-p20" data-label="Tùy chọn">
+                                <button class="del" type="delete">X</button>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-p10" data-label="Mã học phần">KC2312</div>
+                            <div class="col-p30" data-label="Tên học phần" style = "text-align:left; padding-left: 5px;">Một số phương pháp nghiên cứu khảo cổ học</div>
+                            <div class="col-p20" data-label="Ngày đăng ký">3/18/2021</div>
+                            <div class="col-p20" data-label="TT đăng ký">Thành công</div>
+                            <div class="col-p20" data-label="Tùy chọn">
+                                <button class="del" type="delete">X</button>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-p10" data-label="Mã học phần">KC4421</div>
+                            <div class="col-p30" data-label="Tên học phần" style = "text-align:left; padding-left: 5px;">Các thương cảng cổ ở Việt Nam</div>
+                            <div class="col-p20" data-label="Ngày đăng ký">3/18/2021</div>
+                            <div class="col-p20" data-label="TT đăng ký">Thành công</div>
+                            <div class="col-p20" data-label="Tùy chọn">
+                                <button class="del" type="delete">X</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="total">
+                        <div class="course__total">
+                            Tổng số học phần đăng ký&emsp14;:&emsp14;4
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="course-submit">Gửi đăng ký</button>
+            </div>
         </div>
         <!-- Phân công giảng dạy -->
         <div class="content">
-           
+           <div class="schedule-table">
+                <div class="title">Phân công giảng dạy.</div>
+                <ul class="table" style = "height: 450px;">
+                    <div class="line-10"></div>
+                    <div class="line-30"></div>
+                    <div class="line-40"></div>
+                    <div class="line-50"></div>
+                    <div class="line-60"></div>
+                    <div class="line-70"></div>
+                    <div class="line-90"></div>
+                    <li class="table-header">
+                        <div class="col col-p10">Mã lớp</div>
+                        <div class="col col-p20">Tên lớp</div>
+                        <div class="col col-p10">Mã HP</div>
+                        <div class="col col-p10">Phòng học</div>
+                        <div class="col col-p10">Loại lớp</div>
+                        <div class="col col-p10">Tuần học</div>
+                        <div class="col col-p20">Thời gian dự kiến</div>
+                        <div class="col col-p10">Ghi chú</div>
+                    </li>
+                </ul>
+                <button type="submit" class="course-submit">Yêu cầu thay đổi phân công giảng dạy</button>
+           </div>
         </div>
         <!-- Thời khóa biểu -->
         <div class="content">
+            <div class="schedule-table">
+                <div class="title">Thời khóa biểu.</div>
+                <ul class="table">
+                    <div class="line-5"></div>
+                    <div class="line-25"></div>
+                    <div class="line-35"></div>
+                    <div class="line-45"></div>
+                    <div class="line-50"></div>
+                    <div class="line-60"></div>
+                    <div class="line-70"></div>
+                    <div class="line-80"></div>
+                    <div class="line-90"></div>
+                    <li class="table-header">
+                        <div class="col col-p5">Mã lớp</div>
+                        <div class="col col-p20">Tên lớp</div>
+                        <div class="col col-p10">Mã HP</div>
+                        <div class="col col-p10">Phòng học</div>
+                        <div class="col col-p5">Loại lớp</div>
+                        <div class="col col-p10">Tuần học</div>
+                        <div class="col col-p10">Thời gian</div>
+                        <div class="col col-p10">Hình thức dạy</div>
+                        <div class="col col-p10">Link Online</div>
+                        <div class="col col-p10">Ghi chú</div>
+                    </li>
+                    <li class="row underline">
+                        <div class="col col-p5">
+                            
+                        <div class="col col-p20">
+                            
+                        <div class="col col-p5">
+                           
+                        <div class="col col-p5">
+                           
+                        <div class="col col-p10">
+                           
+                        <div class="col col-p10">
+                           
+                        <div class="col col-p10">
+                            
+                        <div class="col col-p10">
 
+                        </div>
+                        <div class="col col-p10">
+                            
+                        </div>
+                        <div class="col col-p10">
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="schedule-timetable">
+                <div class="timetable__header">
+                    <ul class = 'timetable__days'>
+                        <li>Monday</li>
+                        <li>Tuesday</li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>Friday</li>
+                    </ul>
+                </div>
+                <div class="timetable__timeslots">
+                    <ul class="timeslots">
+                        <li>6:00</li>
+                        <li>7:00</li>
+                        <li>8:00</li>
+                        <li>9:00</li>
+                        <li>10:00</li>
+                        <li>11:00</li>
+                        <li>12:00</li>
+                        <li>13:00</li>
+                        <li>14:00</li>
+                        <li>15:00</li>
+                        <li>16:00</li>
+                        <li>17:00</li>
+                        <li>18:00</li>
+                    </ul>
+                </div>
+                <div class="timetable__event">
+                    
+                </div>
+            </div>
         </div>
         <!-- Quản lý điểm -->
         <div class="content">
-        </div>
-    </div>    
+            <div class="Score-Manager">
+                <div class="ClassList">
+                    <ul>
+                        <li>Lớp thứ nhất</li>
+                        <li>Lớp thứ hai</li>
+                        <li>Lớp thứ ba</li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
 </body>
 </html>
